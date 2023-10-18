@@ -1,0 +1,55 @@
+best reourse to set up enviroment correctly
+https://www.youtube.com/watch?v=19LQRx78QVU&t=1158s
+
+
+1. Get jupyter lab online
+
+if jupyter lab not working run below to find location
+- pip show jupyter-core
+
+c:\users\aalsa\appdata\roaming\python\python310\site-packages
+
+powershell command is
+c:\users\aalsa\appdata\roaming\python\python310\Scripts\jupyter lab
+
+or add to path by
+
+- $env:Path += ";c:\users\aalsa\appdata\roaming\python\python310\Scripts"
+
+be use to use anaconda prompt 
+- jupyter lab
+if it still not working use brute force
+- anaconda-navigator
+
+its an awsome gui that can be navigated 
+
+  QUALITY OF LIFE
+  select cell => y convert to code m to markdown
+
+2. create venv for  DL and ML work
+
+- python -m venv nameOfVirtualEnv
+make one
+
+- .\envName\Scripts\activate
+turn on, be sure to be dir where envNameDir is there
+
+- deactivate 
+turn off besue to be in the directory of activation
+
+
+
+
+OPTINAL but awsome
+
+    LINK VENV TO JUPYTER
+
+pip install ipykernel   => link vene to jupyter
+
+python -m ipykernel install --name=basic_algo_trade   => VE name
+  basic_algo_trade will be kernal to be used in the jupyter lab 
+
+jupyter kernelspec list => show list of kernals 
+
+jupyter kernelspec uninstall basic_algo_trade => remove VE from Kernals
+

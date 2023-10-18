@@ -1,0 +1,11 @@
+if jupyter lab not working run below to find location
+pip show jupyter-core
+
+c:\users\aalsa\appdata\roaming\python\python310\site-packages
+
+powershell command is
+c:\users\aalsa\appdata\roaming\python\python310\Scripts\jupyter lab
+
+or add to path by
+
+$env:Path += ";c:\users\aalsa\appdata\roaming\python\python310\Scripts"
